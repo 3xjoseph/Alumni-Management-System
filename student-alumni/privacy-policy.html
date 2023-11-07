@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link href="../css/main.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Thin scrollbar */
+        ::-webkit-scrollbar {
+        width: 8px; /* Adjust the width to make the scrollbar thinner */
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background-color: #ffffff; /* Change the background color of the scrollbar track */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background-color: #991B1B; /* Change the color of the scrollbar handle */
+        border-radius: 4px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background-color: #ac1f1f; /* Change the color of the scrollbar handle on hover */
+        }
+      </style>
+</head>
+<body class="flex items-center justify-center h-full">
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn p-2 rounded-lg bg-accent text-white font-bold h-12 w-24" onclick="my_modal_5.showModal()">Register</button>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle rounded-lg">
+        <div class="modal-box overflow-y-auto">
+            <div class="flex justify-center">
+                <h1 class="font-bold text-3xl text-accent mt-2">Privacy Policy</h1>
+            </div>
+            <hr class="my-4">
+            <div class="justify-center max-w-3xl px-10">
+                <!-- Introduction -->
+                <p class="text-justify">
+                    Welcome to BulSU Connect, your Alumni Management System. 
+                    At Bulacan State University (BulSU), we are committed to protecting your privacy and ensuring the security of your personal information. 
+                    This Data Privacy Notice explains how we collect, use, and safeguard your data in accordance with the Data Privacy Act of 2012 (Republic Act No. 10173).
+                    <br><br>
+                    BulSU Connect will collect personal information that you provide in this MEMBERSHIP APPLICATION FORM solely for the purpose of authenticating 
+                    respondents within our alumni community. We may securely dispose or delete any personal information that is no longer necessary for these purposes.  
+                </p>
+                <br>
+                <!-- How Your Information is Used -->
+                <h3 class="font-bold text-lg text-accent">How Your Information is Used:</h3>
+                <ul class="text-justify list-disc ml-4">
+                    <li><b class="font-bold ">Authenticating Respondents:</b> We use your personal information to verify your identity within the BulSU alumni community.</li>
+                    <li><b class="font-bold ">Communication:</b> We may use your contact details to send you relevant updates, newsletters, and event invitations related to BulSU alumni activities.</li>
+                    <li><b class="font-bold ">Third-Party Sharing:</b> We may share your personal information with BulSU affiliates, business partners, service providers, and contractors or subcontractors for authentication and communication purposes. All shared information is protected by appropriate agreements to ensure your privacy.</li>
+                </ul>
+                <br>
+                <!-- Your Consent -->
+                <h3 class="font-bold text-lg text-accent">Your Consent:</h3>
+                <p class="text-justify">By submitting this form, you consent to the internal processing of your personal information by BulSU Connect. Any external sharing of your information beyond our community will require your explicit written consent.</p>
+                <br> 
+                <!-- Your Rights as a Data Subject -->
+                <h3 class="font-bold text-lg text-accent">Your Rights as a Data Subject:</h3>
+                <ul class="text-justify list-disc ml-4">
+                    <li><b class="font-bold ">Right to be Informed:</b> You have the right to know how your personal information will be processed.</li>
+                    <li><b class="font-bold ">Right to Object:</b> You can object to the processing of your personal information for specific purposes.</li>
+                    <li><b class="font-bold ">Right to Access:</b> You can request access to the personal information we hold about you.</li>
+                    <li><b class="font-bold ">Right to Rectify:</b> You can request corrections to your personal information if it is inaccurate or incomplete.</li>
+                    <li><b class="font-bold ">Right to Erasure or Blocking:</b> You can request the deletion or blocking of your personal information under certain circumstances.</li>
+                    <li><b class="font-bold ">Right to Data Portability:</b> You can obtain and reuse your personal information for your own purposes.</li>
+                    <li><b class="font-bold ">Right to File a Complaint:</b> If you believe your data protection rights have been violated, you have the right to file a complaint.</li>
+                    <li><b class="font-bold ">Right to Compensation:</b> You have the right to claim compensation for damages caused by the violation of your data protection rights.</li>
+                </ul>
+                <br>
+                <!-- Contact Information -->
+                <h3 class="font-bold text-lg text-accent">Contact Information:</h3>
+                <p><b class="font-bold">Data Protection Officer: </b>Patrick Joseph Pronuevo</p>
+                <p> <b class="font-bold">Email:</b> <a href="mailto:patrickjoseph.pronuevo.a@bulsu.edu.ph">patrickjoseph.pronuevo.a@bulsu.edu.ph</a></p>
+                <p><b class="font-bold">Phone:</b> +639764127324</p>
+                <p><b class="font-bold">Website: </b><a href="https://eliamarg.slarenasitsolutions.com/Alumni-Management-System/student-alumni/lgin.php?fbclid=IwAR31O4RRbd1HKkGsWFedwL3z6VQ9Tb7dd1lfLJIfSc_3yHAvOhIyDxIsky0" class="text-accent">BulSU Connect</a></p>
+                <p><b class="font-bold">Date: </b>11/7/2023</p>
+                <br>
+                <p class="italic text-accent font-bold">Thank you for being a part of the BulSU alumni community. Your privacy matters to us.</p>
+                
+            </div>
+                
+            <div class="modal-action">
+                <div class="flex px-10 py-4 space-x-4">
+                    <input type="checkbox" id="privacyPolicyCheckbox">
+                    <label for="privacyPolicyCheckbox" >I have read all privacy policy</label>   
+                </div>
+            
+                <div class="flex justify-end space-x-4 w-full px-10">
+                    <form method="dialog">
+                        <!-- if there is a button in the form, it will close the modal -->
+                        <button class="btn border-2 border-accent text-accent rounded-md p-2">I do not accept</button>
+                    </form>
+                    <button id="acceptButton" class="btn p-2 bg-gray-400 h-11 w-24 rounded-md" disabled>
+                        I accept
+                    </button>
+                </div>
+            </div>
+            
+            <script>
+                // jQuery code for modal and checkbox functionality
+                $(document).ready(function() {
+                    const modal = $('#my_modal_5');
+                    const checkbox = $('#privacyPolicyCheckbox');
+                    const acceptButton = $('#acceptButton');
+                    
+                    checkbox.change(function() {
+                        acceptButton.prop('disabled', !checkbox.prop('checked'));
+                        
+                        if (checkbox.prop('checked')) {
+                            acceptButton.removeClass('bg-gray-400').addClass('bg-green-500 hover:bg-green-700 text-white');
+                        } else {
+                            acceptButton.removeClass('bg-green-500 hover:bg-green-700 text-white').addClass('bg-gray-400 text-black');
+                        }
+                    });
+                    
+                    // Open modal when the "Register" button is clicked
+                    $('#registerButton').click(function() {
+                        modal.showModal();
+                    });
+                    
+                    // Close modal when the "I do not accept" button is clicked
+                    $('#modalCancelButton').click(function() {
+                        modal.close();
+                    });
+                });
+            </script>          
+
+        </div>
+    </dialog>
+</body>
+</html>
